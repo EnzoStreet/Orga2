@@ -1,7 +1,7 @@
-CC = gcc
+CC = -gcc
 CFLAGS = -Wall -Wextra -pedantic
 
-EJS = ej1 ej3 ej4 ej7 ej9 ej10 ej11
+EJS = ej1 ej3 ej4 ej7 ej9 ej10 ej11 ej12 ej13
 
 all: $(EJS)
 
@@ -40,6 +40,12 @@ run10: ej10
 
 run11: ej11
 	./ej11
+
+run12: ej12
+	./ej12
+
+run13: ej13
+	./ej13
 
 clean:
 	rm -f *.o $(EJS)
